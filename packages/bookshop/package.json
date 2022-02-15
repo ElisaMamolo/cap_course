@@ -9,9 +9,13 @@
     "express": "^4",
     "sqlite3": "^5.0.0"
   },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
   "scripts": {
     "start": "cds run --in-memory?",
-    "watch": "cds watch"
+    "watch": "cds watch",
+    "test": "jest"
   },
   "cds": {
     "hana": {
