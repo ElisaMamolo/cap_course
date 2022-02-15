@@ -5,6 +5,7 @@
   "license": "SAP SAMPLE CODE LICENSE",
   "dependencies": {
     "@sap/cds": "^3",
+    "@sap/hana-client": "^2.11.14",
     "express": "^4",
     "sqlite3": "^5.0.0"
   },
@@ -13,9 +14,12 @@
     "watch": "cds watch"
   },
   "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
     "requires": {
       "db": {
-        "kind": "sql"
+        "kind": "hana"
       }
     }
   }

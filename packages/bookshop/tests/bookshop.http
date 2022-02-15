@@ -5,7 +5,7 @@ GET http://localhost:4004/browse
 GET http://localhost:4004/browse/$metadata
 
 ### Browsing Books
-GET http://localhost:4004/browse/Books?
+GET http://localhost:4004/browse/Books?$expand=author
 # &$select=title,author
 # &$expand=currency
 # &sap-language=de
